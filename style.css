@@ -18,6 +18,7 @@ body,
 h1,
 h2,
 h3,
+h4,
 p, 
 section,
 article,
@@ -91,8 +92,8 @@ main {
   background-color: var(--background-200);
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr 12fr;
-  grid-template-rows: 8% 92%;
+  grid-template-columns: 1fr 11fr;
+  grid-template-rows: 7% 93%;
   max-height: 95vh;
   overflow: hidden;
 }
@@ -134,11 +135,12 @@ input[type="search"]{
   border-radius: 5px;
   min-width: 200px;
   outline: none;
+  padding: 0 0.2rem;
 }
 
 .user__wrapper {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto 1fr;
   gap: 1rem;
   align-items: center;
   justify-self: end;
@@ -186,7 +188,7 @@ input[type="search"]{
 .pages, .utilities {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: clamp(1rem, 5vh, 2rem);
 }
 
 .content__wrapper {
@@ -207,8 +209,8 @@ input[type="search"]{
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, 1fr);
   gap: 1rem;
   min-width: 0;
   overflow-y: scroll;
@@ -230,7 +232,7 @@ h2 {
   font-size: 1rem;
 }
 
-section {
+.sidebar > section {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 30px 1fr;
@@ -239,12 +241,52 @@ section {
 .section__wrapper {
   border: 3px solid var(--accent-300);
   border-radius: 10px;
+  overflow: scroll;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .sidebar {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1rem;
   grid-row: 1 / span 2;
+  min-width: 0;
+  overflow-y: scroll;
 }
+
+.announcement p {
+  font-size: 0.7rem;
+}
+
+.announcement {
+  padding: 0.5rem;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 2px solid var(--accent-300);
+}
+
+.post {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post p {
+  line-height: 1.2;
+}
+
+.profile {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--accent-100);
+}
+.post__title {
+  opacity: 0.7;
+}
+
