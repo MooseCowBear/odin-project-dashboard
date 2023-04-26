@@ -22,7 +22,8 @@ h4,
 p, 
 section,
 article,
-input {
+input,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -92,7 +93,7 @@ main {
   background-color: var(--background-200);
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr 11fr;
+  grid-template-columns: 80px 1fr;
   grid-template-rows: 7% 93%;
   max-height: 95vh;
   overflow: hidden;
@@ -170,10 +171,8 @@ input[type="search"]{
   grid-row: 1 / -1;
   grid-column-start: 1;
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 50px 1.8fr 1fr;
   background-color: var(--accent-200);
-  justify-items: start;
   align-items: center;
   padding: 0.5rem 0;
   overflow: auto;
@@ -184,11 +183,13 @@ input[type="search"]{
   justify-self: center;
 }
 
-
-.pages, .utilities {
+ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: clamp(1rem, 5vh, 2rem);
+  width: 100%;
 }
 
 .content__wrapper {
@@ -209,7 +210,7 @@ input[type="search"]{
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-auto-rows: minmax(200px, 1fr);
   gap: 1rem;
   min-width: 0;
