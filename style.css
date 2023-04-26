@@ -284,9 +284,27 @@ h2 {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: 0% 80%;
   background-color: var(--accent-100);
 }
 .post__title {
   opacity: 0.7;
 }
 
+.turtle {
+  object-position: 60% 80%;
+}
+
+.goldfish {
+  object-position: 0% 50%;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer > a {
+  text-decoration: none;
+  color: var(--accent-400);
+}
