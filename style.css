@@ -266,7 +266,7 @@ ul {
   justify-self: end;
 }
 
-.star-view-fork__wrapper > .icon:hover {
+.star-view-fork__wrapper .icon:hover {
   scale: 1.4;
 }
 
