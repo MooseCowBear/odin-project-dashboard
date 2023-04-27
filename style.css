@@ -385,7 +385,7 @@ footer > a {
     grid-row: 1;
     grid-column-start: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-rows: auto;
     gap: 0;
     padding: 0 0.3rem;
@@ -408,6 +408,7 @@ footer > a {
     grid-column: 3;
     justify-content: end;
   }
+
   .logo__wrapper {
     justify-self: start;
   }
@@ -421,22 +422,27 @@ footer > a {
     align-items: center;
     justify-self: start;
   }
+
   .username {
     font-weight: 600;
     display: inline;
   }
+
   .user__wrapper > .profile {
     grid-column: 1;
     grid-row: 1;
   }
+
   .greeting {
     grid-column: 2;
     grid-row: 1;
   }
+
   .user__wrapper > .icon {
     grid-column: 3;
     grid-row: 1;
   }
+
   .search__wrapper {
     grid-row: 2;
   }
