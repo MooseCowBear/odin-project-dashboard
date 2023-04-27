@@ -7,6 +7,33 @@
   --background-200: white;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-100: #1f2933;
+    --background-200: #323f4b; 
+    --accent-100: hsla(159, 33%, 84%, 0.75);
+    --accent-400: hsla(210, 36%, 96%, 0.8);
+    --accent-500: hsla(209, 61%, 16%, 0.8);
+  }
+
+  input[type="search"] {
+    background-color: var(--accent-400);
+  }
+
+  .card {
+    color: var(--accent-500);
+  }
+
+  .icon.bell {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(15%) saturate(232%) hue-rotate(102deg) brightness(94%) contrast(90%);
+    opacity: 0.8;
+  }
+
+  h1 {
+    color: var(--accent-500);
+  }
+}
+
 /* reset */
 *,
 *::before,
