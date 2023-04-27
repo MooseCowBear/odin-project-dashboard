@@ -2,16 +2,17 @@
   --accent-100: hsl(159, 33%, 84%);
   --accent-200: hsl(168, 15%, 55%);
   --accent-300: hsl(46, 86%, 46%);
-  --accent-400: hsl(209, 61%, 16%); /* diff from palette - more blue on screen */
+  --accent-400: hsl(209, 61%, 16%); 
   --background-100: hsl(210, 36%, 96%);
-  --background-200: white;
+  --background-200: hsl(0, 0%, 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-100: #1f2933;
-    --background-200: #323f4b; 
+    --background-100: hsl(210, 24%, 16%);
+    --background-200: hsl(209, 20%, 25%); 
     --accent-100: hsla(159, 33%, 84%, 0.75);
+    --accent-300: hsla(46, 86%, 46%, 0.8);
     --accent-400: hsla(210, 36%, 96%, 0.8);
     --accent-500: hsla(209, 61%, 16%, 0.8);
   }
